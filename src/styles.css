@@ -21,3 +21,8 @@ p#degrees {
   margin-top: 30px;
   font-size: 55px;
 }
+
+small {
+  position: fixed;
+  bottom: 20px;
+}
