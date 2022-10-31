@@ -10,11 +10,17 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Fasthand", cursive;
+  color: #6d6e71;
+}
+
 ul {
   margin-top: 10px;
 }
 li {
   list-style-type: none;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 #degrees {
