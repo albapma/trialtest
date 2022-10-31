@@ -27,11 +27,11 @@ small {
   bottom: 20px;
 }
 
-.weather-temperature.active {
+.active {
   color: black;
   cursor: default;
 }
 
-.weather-temperature.active:hover {
+.active:hover {
   text-decoration: none;
 }
