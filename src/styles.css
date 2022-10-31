@@ -30,7 +30,8 @@ li {
 
 small {
   position: fixed;
-  bottom: 20px;
+  bottom: 300px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .active {
