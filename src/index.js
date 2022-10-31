@@ -10,10 +10,9 @@ function formatDate(date) {
 }
 
 function displayWeather(response) {
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#degrees").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#degrees").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
   document
@@ -40,8 +39,6 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#place");
 searchForm.addEventListener("submit", handleSubmit);
 
-searchCity("Melbourne");
-
 let dateNow = document.querySelector("#date");
 let currentTime = new Date();
 dateNow.innerHTML = formatDate(currentTime);
@@ -60,3 +57,30 @@ function getCurrentLocation(event) {
 
 let currentLocation = document.querySelector("#current");
 currentLocation.addEventListener("click", getCurrentLocation);
+
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#degrees");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#degrees");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsius);
+
+searchCity("Melbourne");

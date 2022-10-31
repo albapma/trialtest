@@ -17,7 +17,7 @@ li {
   list-style-type: none;
 }
 
-p#degrees {
+#degrees {
   margin-top: 30px;
   font-size: 55px;
 }
@@ -25,4 +25,13 @@ p#degrees {
 small {
   position: fixed;
   bottom: 20px;
+}
+
+.weather-temperature.active {
+  color: black;
+  cursor: default;
+}
+
+.weather-temperature.active:hover {
+  text-decoration: none;
 }
