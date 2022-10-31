@@ -15,6 +15,12 @@ function displayWeather(response) {
   document.querySelector("#degrees").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#humidity").innerHTML = Math.round(
+    response.data.main.humidity
+  );
   document
     .querySelector("#icon")
     .setAttribute(
