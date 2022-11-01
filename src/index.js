@@ -45,6 +45,9 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#place");
 searchForm.addEventListener("submit", handleSubmit);
 
+let searchButton = document.querySelector("#searchButton");
+searchButton.addEventListener("click", handleSubmit);
+
 let dateNow = document.querySelector("#date");
 let currentTime = new Date();
 dateNow.innerHTML = formatDate(currentTime);
