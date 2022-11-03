@@ -43,3 +43,14 @@ small {
 .active:hover {
   text-decoration: none !important;
 }
+
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-degrees {
+  font-size: 16px;
+}
+.minimum {
+  color: #6d6e71;
+}
