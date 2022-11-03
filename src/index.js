@@ -32,9 +32,9 @@ function displayForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-        `<div class="row">
+        `
           <div class="col-2">
-            <div class= "weather-forecast-date>${formatDay(
+            <div class= "weather-forecast-date">${formatDay(
               forecastDay.dt
             )}</div>
             
@@ -46,10 +46,9 @@ function displayForecast(response) {
               width="45"
             />
             <div class="forecast-degrees">
-              <span class="maximum">${Math.round(forecastDay.temp.max)}</span>
-              <span class="minimum">${Math.round(forecastDay.temp.min)}</span>
+              <span class="maximum">${Math.round(forecastDay.temp.max)} °</span>
+              <span class="minimum">${Math.round(forecastDay.temp.min)}°</span>
             </div>
-          </div>
         </div>`;
     }
   });
