@@ -1,13 +1,13 @@
 body {
   font-family: sans-serif;
-  padding: 20px;
   margin: 30px auto;
   max-width: 600px;
   border: 1px solid;
   border-color: grey;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 500px;
   box-sizing: border-box;
+  background-image: url("file:///C:/Users/User/Downloads/sky%20picture.jpg");
 }
 
 h1 {
@@ -33,6 +33,7 @@ small {
   position: fixed;
   bottom: 20px;
   font-family: "Nunito Sans", sans-serif;
+  color: black;
 }
 
 .forecast {
@@ -46,4 +47,9 @@ small {
 }
 .minimum {
   color: #6d6e71;
+}
+.container {
+  background-color: rgb(208, 163, 207, 0.7);
+  height: 100%;
+  padding: 20px;
 }
