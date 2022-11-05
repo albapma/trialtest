@@ -35,16 +35,6 @@ small {
   font-family: "Nunito Sans", sans-serif;
 }
 
-.active {
-  color: black;
-  cursor: default;
-  text-decoration: none !important;
-}
-
-.active:hover {
-  text-decoration: none !important;
-}
-
 .forecast {
   margin-top: 35px;
   text-align: center;
