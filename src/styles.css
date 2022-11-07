@@ -8,6 +8,7 @@ body {
   height: 500px;
   box-sizing: border-box;
   background-image: url("sky.jpg");
+  background-repeat: no-repeat;
 }
 
 h1 {
